@@ -1,0 +1,132 @@
+# Prerequisites
+*.d
+
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Linker output
+*.ilk
+*.map
+*.exp
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Kernel Module Compile Results
+*.mod*
+*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf
+
+# debug information files
+*.dwo
+
+# Data format updated 
+
+# Simulation Metadata
+# > Modelsim 
+*.vcd 
+*.wlf
+
+# > Vivado
+*.wdb
+*.wcfg
+
+# > Icarus
+*.fst
+*.ghw
+*.lxt
+*.lxt2
+*.vzt
+
+# Generic System & Editor Files
+
+*.log
+*.jou
+*.bak
+*.tmp
+*.str
+*.txt
+.Xil/
+
+# AMD/Xilinx Vivado Build Artifacts
+# > Ignore compiler caches, simulations, and implementation runs
+*.cache/
+*.hw/
+*.ip_user_files/
+*.sim/
+*.runs/
+*.sdk/
+*.gen/
+
+# Ignore specific transient Vivado files
+*.debug
+*.rst
+*.os
+*.pb
+_synth_*/
+jobs/
+
+# IP Core generated files (Keep the .xci source, ignore the outputs)
+# > Un-comment the line below if you generate IP output products on-the-fly
+# > bd/*/ip/*/*
+
+# Intel Quartus Prime Build Artifacts
+# > Ignore database, compilation, and summary folders
+db/
+incremental_db/
+output_files/
+simulation/
+greybox_tmp/
+hc_output/
+
+# Ignore auto-generated files and compilation bitstreams
+*.sof
+*.pof
+*.jdi
+*.rpt
+*.summary
+*.smsg
+*.done
+*.pin
+*.qws
+*.qarlog
+*.eqn
+*._generation_script*
+
+# Qsys / Platform Designer temporary artifacts
+.qsys_edit/
+*_generation_script
