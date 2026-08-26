@@ -1,6 +1,10 @@
 # Prerequisites
 *.d
 
+# Database files
+*.gz
+*-ubyte
+
 # Object files
 *.o
 *.ko
