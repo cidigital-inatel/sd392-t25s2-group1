@@ -14,6 +14,8 @@ Este repositório reúne o desenvolvimento de uma plataforma Edge-AI baseada na 
 
 Atualmente, o modelo em ponto flutuante, o treinamento e a exportação dos parâmetros estão disponíveis. A implementação da NPU em RTL, a referência integral em ponto fixo, o software embarcado, a síntese, o bitstream e a validação na placa FPGA permanecem em desenvolvimento.
 
+Documentação: [Aplicação de IA](/dev/application/README.md) | [Hardware e RTL](/dev/hw/README.md)
+
 ## Componentes / Colaboradores
 
 | | ESTUDANTE | FUNÇÃO |
