@@ -4,8 +4,8 @@
     "xci_name": "mpsoc_preset_ps8_0_axi_periph_0",
     "cell_name": "ps8_0_axi_periph",
     "component_reference": "xilinx.com:ip:axi_interconnect:2.1",
-    "ip_revision": "36",
-    "gen_directory": "../../../../../../ai_fpga.gen/sources_1/bd/mpsoc_preset/ip/mpsoc_preset_ps8_0_axi_periph_0",
+    "ip_revision": "34",
+    "gen_directory": "../../../../../../xilinx_zcu102_template.gen/sources_1/bd/mpsoc_preset/ip/mpsoc_preset_ps8_0_axi_periph_0",
     "parameters": {
       "component_parameters": {
         "NUM_SI": [ { "value": "2", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
@@ -339,12 +339,12 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator_AppCore" } ],
-        "IPREVISION": [ { "value": "36" } ],
+        "IPREVISION": [ { "value": "34" } ],
         "MANAGED": [ { "value": "TRUE" } ],
-        "OUTPUTDIR": [ { "value": "../../../../../../ai_fpga.gen/sources_1/bd/mpsoc_preset/ip/mpsoc_preset_ps8_0_axi_periph_0" } ],
+        "OUTPUTDIR": [ { "value": "../../../../../../xilinx_zcu102_template.gen/sources_1/bd/mpsoc_preset/ip/mpsoc_preset_ps8_0_axi_periph_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
         "SHAREDDIR": [ { "value": "../../ipshared" } ],
-        "SWVERSION": [ { "value": "2024.2.2" } ],
+        "SWVERSION": [ { "value": "2024.2" } ],
         "SYNTHESISFLOW": [ { "value": "GLOBAL" } ]
       }
     }

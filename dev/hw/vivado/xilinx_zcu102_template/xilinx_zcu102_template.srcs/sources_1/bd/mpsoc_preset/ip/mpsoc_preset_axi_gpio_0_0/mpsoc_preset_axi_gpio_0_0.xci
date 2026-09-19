@@ -4,8 +4,8 @@
     "xci_name": "mpsoc_preset_axi_gpio_0_0",
     "cell_name": "axi_gpio_0",
     "component_reference": "xilinx.com:ip:axi_gpio:2.0",
-    "ip_revision": "36",
-    "gen_directory": "../../../../../../ai_fpga.gen/sources_1/bd/mpsoc_preset/ip/mpsoc_preset_axi_gpio_0_0",
+    "ip_revision": "35",
+    "gen_directory": "../../../../../../xilinx_zcu102_template.gen/sources_1/bd/mpsoc_preset/ip/mpsoc_preset_axi_gpio_0_0",
     "parameters": {
       "component_parameters": {
         "C_TRI_DEFAULT": [ { "value": "0xFFFFFFFF", "resolve_type": "user", "format": "bitString", "enabled": false, "usage": "all" } ],
@@ -57,12 +57,12 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "36" } ],
+        "IPREVISION": [ { "value": "35" } ],
         "MANAGED": [ { "value": "TRUE" } ],
-        "OUTPUTDIR": [ { "value": "../../../../../../ai_fpga.gen/sources_1/bd/mpsoc_preset/ip/mpsoc_preset_axi_gpio_0_0" } ],
+        "OUTPUTDIR": [ { "value": "../../../../../../xilinx_zcu102_template.gen/sources_1/bd/mpsoc_preset/ip/mpsoc_preset_axi_gpio_0_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
         "SHAREDDIR": [ { "value": "../../ipshared" } ],
-        "SWVERSION": [ { "value": "2024.2.2" } ],
+        "SWVERSION": [ { "value": "2024.2" } ],
         "SYNTHESISFLOW": [ { "value": "OUT_OF_CONTEXT" } ]
       }
     },
