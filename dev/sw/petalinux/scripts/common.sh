@@ -5,7 +5,8 @@ set -euo pipefail
 
 SCRIPTS_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PLX_ROOT="$(dirname "$SCRIPTS_DIR")"
-EXTERN_DIR="$PLX_ROOT/extern"
+INSTALLER_DIR="$PLX_ROOT/installer"
+BSP_DIR="$PLX_ROOT/bsp"
 
 # shellcheck disable=SC1091
 [ -f "$PLX_ROOT/config.local.env" ] && source "$PLX_ROOT/config.local.env"
@@ -31,10 +32,13 @@ require_linux_fs() {
     esac
 }
 
-# Primeiro arquivo em extern/ que casa com o padrão (ou vazio).
-find_extern() {
-    find "$EXTERN_DIR" -maxdepth 1 -type f -name "$1" 2>/dev/null | sort | tail -n 1
+# Último arquivo (em ordem alfabética) de um diretório que casa com o padrão, ou vazio.
+find_file() {
+    find "$1" -maxdepth 1 -type f -name "$2" 2>/dev/null | sort | tail -n 1
 }
+
+find_installer() { find_file "$INSTALLER_DIR" "petalinux-v${PETALINUX_VERSION}-*-installer.run"; }
+find_bsp()       { find_file "$BSP_DIR" "*.bsp"; }
 
 
 is_installed() {

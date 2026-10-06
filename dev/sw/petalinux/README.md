@@ -17,15 +17,25 @@ Atualmente, a imagem usa o hardware de referência do BSP, com o XSA padrão emb
   swap=16GB
   ```
 
-- Em `extern/` (não versionado; exige login na AMD):
+- Arquivos da AMD (não versionados, o download exige login):
 
-  | Arquivo | Download |
-  | :--- | :--- |
-  | `petalinux-v2024.2-*-installer.run` | [AMD Downloads 2024.2: PetaLinux Tools](https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/embedded-design-tools/2024-2.html) (*PetaLinux Tools - Installer*) |
-  | `xilinx-zcu102-v2024.2-*.bsp` | Mesma página, seção *PetaLinux Board Support Packages* (*ZCU102 BSP*) |
-  | `.xsa` base da ZCU102 | Já vem dentro do BSP; após o `create`, fica em `~/projetos/zcu102-npu/hardware/xilinx-zcu102-2024.2/outputs/project_1.xsa` |
+  | Arquivo | Pasta | Download |
+  | :--- | :--- | :--- |
+  | `petalinux-v2024.2-*-installer.run` | `installer/` | [AMD Downloads 2024.2: PetaLinux Tools](https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/embedded-design-tools/2024-2.html) (*PetaLinux Tools - Installer*) |
+  | `xilinx-zcu102-v2024.2-*.bsp` | `bsp/` | Mesma página, seção *PetaLinux Board Support Packages* (*ZCU102 BSP*) |
+  | `.xsa` base da ZCU102 | — | Já vem dentro do BSP; após o `create`, fica em `~/projetos/zcu102-npu/hardware/xilinx-zcu102-2024.2/outputs/project_1.xsa` |
 
 O PetaLinux e o projeto ficam em `$HOME` no Linux; não funcionam em `/mnt/c`.
+
+## Estrutura
+
+| Pasta | Conteúdo |
+| :--- | :--- |
+| `scripts/` | Scripts chamados pelo `plx.sh` |
+| `installer/` | Instalador do PetaLinux (não versionado) |
+| `bsp/` | BSP usado para criar o projeto |
+| `xsa/` | `.xsa` do design com a NPU (futuro) |
+| `src/` | Receitas BitBake de softwares e drivers incluídos na imagem (futuro) |
 
 ## Uso
 
@@ -52,10 +62,10 @@ O primeiro build leva horas; os seguintes, minutos (cache em `~/petalinux-shared
 
 A NPU ainda não está no projeto: será implementada em RTL pelo time de hardware e integrada nesta etapa, mais à frente. Até lá, o projeto usa o `.xsa` base do BSP, que serve para validar o fluxo e a placa.
 
-Quando o `.xsa` com a NPU estiver pronto (exportado no Vivado com bitstream):
+Quando o `.xsa` com a NPU estiver pronto (exportado no Vivado com bitstream), salve em `xsa/` e rode:
 
 ```bash
-./plx.sh config --xsa <design>.xsa
+./plx.sh config --xsa xsa/<design>.xsa
 ./plx.sh build && ./plx.sh package
 ```
 

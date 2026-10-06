@@ -25,8 +25,8 @@ status() {
     echo "PetaLinux:  $PETALINUX_DIR $(is_installed && echo '[instalado]' || echo '[não instalado]')"
     echo "Projeto:    $PROJECT_DIR $([ -d "$PROJECT_DIR/project-spec" ] && echo '[criado]' || echo '[não criado]')"
     echo "Cache:      $SHARED_DIR"
-    echo "Instalador: ${INSTALLER:-$(find_extern "petalinux-v${PETALINUX_VERSION}-*-installer.run")}"
-    echo "BSP:        ${BSP:-$(find_extern "xilinx-zcu102-v${PETALINUX_VERSION}-*.bsp")}"
+    echo "Instalador: ${INSTALLER:-$(find_installer)}"
+    echo "BSP:        ${BSP:-$(find_bsp)}"
     echo "XSA:        ${XSA:-(nenhum; hardware do BSP)}"
     echo "BOOT.BIN:   $([ -f "$IMAGES_DIR/BOOT.BIN" ] && echo "$IMAGES_DIR/BOOT.BIN" || echo '(não gerado)')"
 }

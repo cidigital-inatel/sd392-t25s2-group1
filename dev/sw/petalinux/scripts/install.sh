@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Instala o PetaLinux em $PETALINUX_DIR a partir do instalador em extern/.
+# Instala o PetaLinux em $PETALINUX_DIR a partir do instalador em installer/.
 #
 # Uso: install.sh [--accept-license] [--force]
 #   --accept-license  aceita as licenças da AMD/Xilinx sem exibi-las (instalação sem interação)
@@ -25,9 +25,9 @@ if is_installed && [ "$force" -eq 0 ]; then
     exit 0
 fi
 
-[ -n "$INSTALLER" ] || INSTALLER="$(find_extern "petalinux-v${PETALINUX_VERSION}-*-installer.run")"
+[ -n "$INSTALLER" ] || INSTALLER="$(find_installer)"
 [ -n "$INSTALLER" ] && [ -f "$INSTALLER" ] ||
-    die "instalador não encontrado. Coloque o petalinux-v${PETALINUX_VERSION}-*-installer.run em $EXTERN_DIR"
+    die "instalador não encontrado. Coloque o petalinux-v${PETALINUX_VERSION}-*-installer.run em $INSTALLER_DIR"
 
 if [ -d "$PETALINUX_DIR" ] && [ -n "$(ls -A "$PETALINUX_DIR")" ]; then
     [ "$force" -eq 1 ] ||

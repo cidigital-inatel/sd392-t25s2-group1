@@ -33,9 +33,9 @@ if [ "$template" -eq 1 ]; then
     log "criando $PROJECT_NAME a partir do template zynqMP"
     petalinux-create project --template zynqMP --name "$PROJECT_NAME"
 else
-    [ -n "$BSP" ] || BSP="$(find_extern "xilinx-zcu102-v${PETALINUX_VERSION}-*.bsp")"
+    [ -n "$BSP" ] || BSP="$(find_bsp)"
     [ -n "$BSP" ] && [ -f "$BSP" ] ||
-        die "BSP não encontrado. Coloque o xilinx-zcu102-v${PETALINUX_VERSION}-*.bsp em $EXTERN_DIR ou use --template."
+        die "BSP não encontrado. Coloque o .bsp em $BSP_DIR ou use --template."
     log "criando $PROJECT_NAME a partir de $(basename "$BSP")"
     petalinux-create project --source "$BSP" --name "$PROJECT_NAME"
 fi
