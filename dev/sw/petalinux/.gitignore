@@ -1,0 +1,7 @@
+# Instalador e BSP são grandes demais para o git; baixe do site da AMD.
+extern/*
+!extern/.gitkeep
+
+config.local.env
+/local
+tools.md
