@@ -3,14 +3,14 @@
 > feito por: Hyago Vieira Lemes Barbosa Sílva
 > Líder técnico do G1-CIDigital
 
-Este projeto treina uma rede neural convolucional (CNN) para reconhecer dígitos manuscritos do conjunto MNIST e converte seus pesos e vieses para uma representação de 8 bits adequada à inicialização de memórias em uma futura implementação em FPGA.
+Este projeto treina uma rede neural convolucional (CNN) para reconhecer dígitos manuscritos do conjunto MNIST e converte seus pesos e vieses para uma representação de 8 bits usada na implementação RTL descrita em [hardware](../hw/README.md).
 
 O objetivo principal é criar uma ponte didática entre dois mundos:
 
 - **inteligência artificial em software**, usando Python e PyTorch;
 - **circuitos digitais reconfiguráveis**, usando ponto fixo e memórias internas de FPGA.
 
-> **Status atual:** o treinamento, o teste e a exportação dos parâmetros estão implementados. O repositório ainda precisa do circuito RTL, do testbench, da síntese e do teste em placa para se tornar uma implementação FPGA completa.
+> **Status atual:** o treinamento, o teste, a exportação dos parâmetros, o RTL de inferência e um testbench AXI4-Stream estão disponíveis. A síntese, a implementação e o teste na ZCU102 ainda precisam ser concluídos.
 
 ## Resumo rápido
 
@@ -25,7 +25,7 @@ O objetivo principal é criar uma ponte didática entre dois mundos:
 | Treinamento | PyTorch em `float32` |
 | Formato de exportação | Ponto fixo assinado Q1.7, 8 bits |
 | Arquivos para memória | `.mem` em texto hexadecimal |
-| Implementação RTL/FPGA | Ainda não incluída |
+| Implementação RTL/FPGA | RTL integrado ao Block Design e testbench disponível; síntese, implementação e teste em placa pendentes |
 
 A acurácia de 96.14% veio da execução preservada no notebook original. Ela serve como referência, mas deve ser medida novamente após cada treinamento. Também não deve ser apresentada como resultado da FPGA enquanto o hardware não reproduzir e validar toda a inferência.
 
@@ -58,7 +58,7 @@ Isso pode oferecer baixa latência e bom uso de energia, mas exige que o cálcul
 5. pesos e vieses são quantizados para Q1.7;
 6. os valores assinados são codificados em complemento de dois;
 7. cada conjunto de parâmetros é salvo em `.mem`;
-8. em uma etapa futura, esses dados alimentarão memórias e blocos aritméticos descritos em Verilog ou VHDL.
+8. os arquivos `.mem` são carregados pelos blocos RTL de inferência em Verilog; veja a [integração com a ZCU102](../hw/src/rtl/cnn_mnist/README.md).
 
 ## Arquitetura do modelo
 

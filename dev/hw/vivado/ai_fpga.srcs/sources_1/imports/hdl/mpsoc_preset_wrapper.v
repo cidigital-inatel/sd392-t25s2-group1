@@ -11,11 +11,8 @@
 `timescale 1 ps / 1 ps
 
 module mpsoc_preset_wrapper
-   (led_8bits_tri_o);
-  output [7:0]led_8bits_tri_o;
-
-  wire [7:0]led_8bits_tri_o;
+   ();
 
   mpsoc_preset mpsoc_preset_i
-       (.led_8bits_tri_o(led_8bits_tri_o));
+       ();
 endmodule

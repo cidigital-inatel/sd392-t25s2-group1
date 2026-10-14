@@ -51,7 +51,7 @@
         "OUTPUTDIR": [ { "value": "../../../../../../ai_fpga.gen/sources_1/bd/mpsoc_preset/ip/mpsoc_preset_rst_ps8_0_99M_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
         "SHAREDDIR": [ { "value": "../../ipshared" } ],
-        "SWVERSION": [ { "value": "2024.2.2" } ],
+        "SWVERSION": [ { "value": "2024.2" } ],
         "SYNTHESISFLOW": [ { "value": "OUT_OF_CONTEXT" } ]
       }
     },

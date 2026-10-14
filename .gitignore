@@ -85,6 +85,24 @@ dkms.conf
 *.str
 *.txt
 .Xil/
+.synth/
+# Licencas locais do Vivado
+*.lic
+
+# Resultados de compilacao
+*.dcp
+*.bit
+*.ltx
+
+# Copias antigas da CNN: as fontes atuais estao em dev/hw/src/rtl
+/dev/hw/vivado/ai_fpga.srcs/sources_1/imports/cnn_mnist/
+
+# Checkpoints locais de sintese
+/dev/hw/vivado/ai_fpga.srcs/utils_1/
+
+# Manter apenas o XSA da entrega atual
+*.xsa
+!/dev/hw/vivado/zcu102_cnn_mnist.xsa
 
 # AMD/Xilinx Vivado Build Artifacts
 # > Ignore compiler caches, simulations, and implementation runs
