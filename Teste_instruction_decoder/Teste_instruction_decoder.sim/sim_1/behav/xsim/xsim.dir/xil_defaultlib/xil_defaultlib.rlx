@@ -1,0 +1,11 @@
+0.7
+2020.2
+Nov  8 2024
+22:36:57
+C:/Users/felip/Downloads/Projeto TCC/Teste_instruction_decoder/Teste_instruction_decoder.sim/sim_1/behav/xsim/glbl.v,1724786425,verilog,,,,glbl,,,,,,,,
+C:/Users/felip/Downloads/Projeto TCC/Teste_instruction_decoder/Teste_instruction_decoder.srcs/sim_1/new/fetch_decoder_top_tb.v,1792708782,verilog,,,,fetch_decoder_top_tb,,,,,,,,
+C:/Users/felip/Downloads/Projeto TCC/Teste_instruction_decoder/Teste_instruction_decoder.srcs/sim_1/new/instruction_decoder_tb.v,1791498884,verilog,,,,instruction_decoder_tb,,,,,,,,
+C:/Users/felip/Downloads/Projeto TCC/Teste_instruction_decoder/Teste_instruction_decoder.srcs/sim_1/new/instruction_fetch_tb.v,1792025010,verilog,,,,instruction_fetch_tb,,,,,,,,
+C:/Users/felip/Downloads/Projeto TCC/Teste_instruction_decoder/Teste_instruction_decoder.srcs/sources_1/imports/Projeto TCC/instruction_decoder.v,1791496954,verilog,,C:/Users/felip/Downloads/Projeto TCC/Teste_instruction_decoder/Teste_instruction_decoder.srcs/sources_1/new/instruction_fetch.v,,instruction_decoder,,,,,,,,
+C:/Users/felip/Downloads/Projeto TCC/Teste_instruction_decoder/Teste_instruction_decoder.srcs/sources_1/new/fetch_decoder_top.v,1792709228,verilog,,C:/Users/felip/Downloads/Projeto TCC/Teste_instruction_decoder/Teste_instruction_decoder.srcs/sources_1/imports/Projeto TCC/instruction_decoder.v,,fetch_decoder_top,,,,,,,,
+C:/Users/felip/Downloads/Projeto TCC/Teste_instruction_decoder/Teste_instruction_decoder.srcs/sources_1/new/instruction_fetch.v,1792021266,verilog,,C:/Users/felip/Downloads/Projeto TCC/Teste_instruction_decoder/Teste_instruction_decoder.srcs/sim_1/new/fetch_decoder_top_tb.v,,instruction_fetch,,,,,,,,

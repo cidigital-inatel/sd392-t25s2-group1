@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Teste_instruction_decoder.srcs/sources_1/new/fetch_decoder_top.v" \
+"../../../../Teste_instruction_decoder.srcs/sources_1/imports/Projeto TCC/instruction_decoder.v" \
+"../../../../Teste_instruction_decoder.srcs/sources_1/new/instruction_fetch.v" \
+"../../../../Teste_instruction_decoder.srcs/sim_1/new/fetch_decoder_top_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
