@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/CI DIGITAL/TCC/Modulo _ CRTL - Ronan/npu_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module npu_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/CI DIGITAL/TCC/Modulo _ CRTL - Ronan/tb_npu_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_npu_ctrl

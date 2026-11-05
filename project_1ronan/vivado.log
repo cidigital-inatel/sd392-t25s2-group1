@@ -1,0 +1,101 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Wed Nov  4 19:44:47 2026
+# Process ID         : 10464
+# Current directory  : C:/CI DIGITAL/TCC/Modulo _ CRTL - Ronan/project_1ronan
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent20900 C:\CI DIGITAL\TCC\Modulo _ CRTL - Ronan\project_1ronan\project_1ronan.xpr
+# Log file           : C:/CI DIGITAL/TCC/Modulo _ CRTL - Ronan/project_1ronan/vivado.log
+# Journal file       : C:/CI DIGITAL/TCC/Modulo _ CRTL - Ronan/project_1ronan\vivado.jou
+# Running On         : Ronan
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i5-12500H
+# CPU Frequency      : 3110 MHz
+# CPU Physical cores : 12
+# CPU Logical cores  : 16
+# Host memory        : 16849 MB
+# Swap memory        : 4831 MB
+# Total Virtual      : 21681 MB
+# Available Virtual  : 5373 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/CI DIGITAL/TCC/Modulo _ CRTL - Ronan/project_1ronan/project_1ronan.xpr}
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/CI DIGITAL/TCC/Modulo _ CRTL - Ronan/project_1ronan/project_1ronan.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+open_project: Time (s): cpu = 00:00:49 ; elapsed = 00:00:29 . Memory (MB): peak = 1221.262 ; gain = 122.418
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_npu_ctrl'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/CI DIGITAL/TCC/Modulo _ CRTL - Ronan/project_1ronan/project_1ronan.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_npu_ctrl' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/CI DIGITAL/TCC/Modulo _ CRTL - Ronan/project_1ronan/project_1ronan.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_npu_ctrl_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/CI DIGITAL/TCC/Modulo _ CRTL - Ronan/npu_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module npu_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/CI DIGITAL/TCC/Modulo _ CRTL - Ronan/tb_npu_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_npu_ctrl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/CI DIGITAL/TCC/Modulo _ CRTL - Ronan/project_1ronan/project_1ronan.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_npu_ctrl_behav xil_defaultlib.tb_npu_ctrl xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_npu_ctrl_behav xil_defaultlib.tb_npu_ctrl xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.npu_ctrl
+Compiling module xil_defaultlib.tb_npu_ctrl
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_npu_ctrl_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1268.727 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/CI DIGITAL/TCC/Modulo _ CRTL - Ronan/project_1ronan/project_1ronan.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_npu_ctrl_behav -key {Behavioral:sim_1:Functional:tb_npu_ctrl} -tclbatch {tb_npu_ctrl.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source tb_npu_ctrl.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+OK: start foi gerado
+OK: start voltou para zero
+OK: STATUS.busy = 1
+OK: STATUS.done = 1
+OK: STATUS.done foi limpo
+TODOS OS TESTES PASSARAM!
+$finish called at time : 76 ns : File "C:/CI DIGITAL/TCC/Modulo _ CRTL - Ronan/tb_npu_ctrl.v" Line 112
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_npu_ctrl_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:13 . Memory (MB): peak = 1270.359 ; gain = 1.633
