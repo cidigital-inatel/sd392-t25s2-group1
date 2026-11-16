@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Tue Oct 27 17:00:52 2026
+# Process ID         : 27008
+# Current directory  : C:/Users/Erica/sched_disp_v2/sched_disp_v2.runs/synth_1
+# Command line       : vivado.exe -log sched_disp.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sched_disp.tcl
+# Log file           : C:/Users/Erica/sched_disp_v2/sched_disp_v2.runs/synth_1/sched_disp.vds
+# Journal file       : C:/Users/Erica/sched_disp_v2/sched_disp_v2.runs/synth_1\vivado.jou
+# Running On         : DESKTOP-N2R0KPD
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 5 3500U with Radeon Vega Mobile Gfx  
+# CPU Frequency      : 2100 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 6376 MB
+# Swap memory        : 10219 MB
+# Total Virtual      : 16596 MB
+# Available Virtual  : 2567 MB
+#-----------------------------------------------------------
+source sched_disp.tcl -notrace

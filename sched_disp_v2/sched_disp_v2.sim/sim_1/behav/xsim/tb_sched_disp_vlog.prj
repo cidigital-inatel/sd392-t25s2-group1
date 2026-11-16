@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../sched_disp_v2.srcs/sources_1/imports/rtl/dispatch.v" \
+"../../../../sched_disp_v2.srcs/sources_1/imports/rtl/sched_disp.v" \
+
+sv xil_defaultlib  \
+"../../../../sched_disp_v2.srcs/sim_1/imports/tb/mock_fetch.sv" \
+"../../../../sched_disp_v2.srcs/sim_1/imports/tb/mock_unit.sv" \
+"../../../../sched_disp_v2.srcs/sim_1/imports/tb/tb_sched_disp.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
